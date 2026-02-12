@@ -1,0 +1,247 @@
+.homeHero-container {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: var(--customBg);
+}
+.homeHero-content {
+  /* border: solid green; */
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.homeHero-content > h2 {
+  color: var(--accentColor);
+  font-size: 45px;
+  font-family: "Playfair Display", serif !important;
+}
+
+.homeHero-wrapper {
+  /* border: solid blue; */
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.homeHero-block1 {
+  /* border: solid green; */
+  width: 250px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+}
+.homeHero-block1:nth-child(1) {
+  background-color: #e6dfff;
+  color: var(--customColor1);
+}
+.homeHero-block1:nth-child(2) {
+  background-color: var(--customColor1);
+  color: white;
+}
+.homeHero-block1 > b {
+  font-size: 40px;
+  font-weight: 550;
+}
+.homeHero-block1 > p {
+  text-align: center;
+  width: 80%;
+}
+.homeHero-block2 {
+  border: 1px solid var(--customColor1);
+  width: 450px;
+  height: 350px;
+  border-radius: 20px;
+  background-color: #d3c4ff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeHero-block2 > img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0px;
+}
+.homeHero-float {
+  position: absolute;
+  width: 200px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 5px 10px rgb(64, 64, 64);
+  height: fit-content;
+}
+.homeHero-float > p {
+  font-size: 14px;
+  text-align: center;
+  line-height: 15px;
+  color: var(--customColor1);
+}
+.homeHero-float:nth-child(3) {
+  left: -50px;
+  bottom: 90px;
+  height: 40px;
+}
+.homeHero-float:nth-child(3) p {
+  margin-top: 20px;
+}
+.homeHero-float:nth-child(2) {
+  right: -50px;
+}
+.homeHero-float > b {
+  font-size: 40px;
+  color: var(--customColor1);
+}
+.enquiry-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 600px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.enquiry-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.enquiry-sub {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.enquiry-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.enquiry-form input,
+.enquiry-form select {
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+}
+
+/* Mobile number */
+
+.mobile-field {
+  display: flex;
+}
+
+.mobile-field span {
+  background: #e5e7eb;
+  padding: 14px;
+  border-radius: 10px 0 0 10px;
+}
+
+.mobile-field input {
+  border-radius: 0 10px 10px 0;
+  border-left: none;
+  width: 100%;
+}
+
+/* Consent */
+
+.consent-box {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #374151;
+}
+
+/* Submit */
+
+.submit-wrap {
+  text-align: center;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  background: #ff4d3d;
+  color: white;
+  border: none;
+  padding: 14px 35px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .enquiry-form {
+    grid-template-columns: 1fr;
+  }
+  .enquiry-card {
+    background: white;
+    width: 100%;
+  }
+  .homeHero-container {
+    /* border: solid red; */
+    padding: 10px;
+    flex-direction: column;
+  }
+  .homeHero-content {
+    /* border: solid green; */
+    width: 100%;
+    height: 100%;
+    gap: 30px;
+  }
+  .homeHero-content > h2 {
+    color: var(--accentColor);
+    font-size: 50px;
+    font-family: "Playfair Display", serif !important;
+  }
+  .homeHero-wrapper {
+    /* border: solid blue; */
+    width: 100%;
+    gap: 20px;
+  }
+  .homeHero-float {
+    position: absolute;
+    width: 150px;
+    transform: scale(0.8);
+  }
+  .homeHero-float:nth-child(3) {
+    left: 0px;
+    bottom: 90px;
+    height: fit-content;
+  }
+
+.homeHero-float:nth-child(3) p {
+  margin-top: 0px;
+}
+  .homeHero-float:nth-child(2) {
+    right: 0px;
+  }
+  .homeHero-float > b {
+    font-size: 20px;
+    color: var(--customColor1);
+  }
+}

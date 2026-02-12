@@ -1,0 +1,207 @@
+.navbar-container {
+  /* border: solid red; */
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background-color: white;
+}
+.menu-wrapper {
+  /* border: solid green; */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* border: solid; */
+}
+.logo-container {
+  padding: 20px;
+}
+.logo-container > h2 > span {
+  color: var(--accentColor1);
+}
+.logo-container > a > img {
+  width: 200px;
+  height: 100%;
+  object-fit: cover;
+}
+.menu-container {
+  width: 70%;
+  height: 100%;
+  /* border: solid green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.menu-content {
+  /* border: solid red; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.menu-content > ul {
+  /* border: solid brown; */
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu-content > ul > li {
+  list-style: none;
+}
+.menu-content > ul > li > a {
+  color: grey;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  &:hover {
+    color: var(--accentColor);
+  }
+}
+.menu-content > ul > button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--customColor1);
+  border: 1px solid var(--accentColor1);
+  color: white;
+  font-weight: 500;
+  transition: 600ms ease;
+  &:hover {
+    box-shadow: 0 0 10px var(--customColor1);
+  }
+}
+
+.menu-content > ul > li > a.active {
+  color: var(--customColor1);
+}
+.repMenu-container {
+  /* border: solid red; */
+  height: 100%;
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+.respMenu-icon {
+  font-size: 40px;
+  color: var(--accentColor1);
+  display: none;
+}
+/* Sidebar (mobile) */
+.repMenu-content {
+  /* border: solid red; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  z-index: 10000;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  /* Start hidden with translateX */
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Slide in when open */
+.repMenu-content.show {
+  transform: translateX(0);
+}
+
+.close-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.repMenu-content > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+.repMenu-content > ul > button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: var(--customColor1);
+  border: 1px solid var(--accentColor1);
+  color: white;
+  font-weight: 500;
+  transition: 600ms ease;
+  &:hover {
+    box-shadow: 0 0 10px var(--customColor1);
+  }
+}
+.repMenu-content ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.repMenu-content li a.active {
+  color: var(--accentColor1);
+  font-weight: 700;
+}
+
+/* Hamburger icon */
+.respMenu-icon {
+  display: none;
+  font-size: 40px;
+  color: var(--accentColor1);
+  cursor: pointer;
+}
+.respMenu-iconX {
+  display: none;
+  font-size: 40px;
+  color: var(--accentColor1);
+  cursor: pointer;
+}
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .logo-container > a > img {
+  width: 150px;
+  height: 100%;
+  object-fit: cover;
+}
+  .menu-content {
+    display: none;
+  }
+  .repMenu-container {
+    display: flex;
+  }
+  .respMenu-icon {
+    display: flex;
+  }
+}
+
+.repMenu-content > ul > li {
+  list-style: none;
+}
+@media screen and (max-width: 768px) {
+  .menu-content {
+    display: none;
+  }
+  .navbar-container {
+    /* border: solid red; */
+    height: 80px;
+    width: 100%;
+  }
+}
+/* Hamburger icon visible on mobile */

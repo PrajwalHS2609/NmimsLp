@@ -1,0 +1,116 @@
+.eligibility {
+  padding:  80px;
+  background: white;
+}
+
+.eligibility-title {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* Layout */
+
+.eligibility-container {
+  /* border: solid; */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Card */
+
+.eligibility-card {
+  background: #fff;
+  /* border: solid red; */
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.547);
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eligibility-card h3 {
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.eligibility-img {
+  width: 100%;
+  max-width: 150px;
+}
+
+/* Right Timeline */
+
+.eligibility-content {
+  /* border: solid; */
+  position: relative;
+  padding-left: 40px;
+  width: 50%;
+}
+
+.eligibility-content::before {
+  content: "";
+  position: absolute;
+  left: 50px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--accentColor);
+}
+
+.eligibility-point {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.dot {
+  width: 30px;
+  height: 30px;
+  background: var(--accentColor);
+  border-radius: 50%;
+  position: absolute;
+  left: -3px;
+  top: 0;
+}
+
+.eligibility-point p {
+  margin-left: 50px;
+  line-height: 1.6;
+}
+@media screen and (max-width: 768px) {
+  .eligibility {
+    padding: 20px;
+  }
+  .eligibility-container {
+    flex-direction: column;
+  }
+
+  .eligibility-content {
+    /* border: solid; */
+    position: relative;
+    padding-left: 40px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .eligibility-card {
+    /* border: solid red; */
+    padding: 10px;
+    width: 100%;
+    flex-direction: column;
+  }
+  .eligibility-card h3 {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .eligibility-point p {
+    text-align: justify;
+  }
+  .eligibility-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}

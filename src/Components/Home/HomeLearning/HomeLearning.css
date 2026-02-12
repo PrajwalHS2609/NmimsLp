@@ -1,0 +1,68 @@
+.learning-container {
+  /* border: solid red; */
+  width: 100%;
+  padding: 50px;
+}
+.learning-grid {
+  /* border: solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.learningCard {
+  /* border: solid blue; */
+  width: 40%;
+  height: 240px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.learningCard-large {
+  border: 1px solid var(--customColor1);
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #e6dfff;
+}
+.learningCard-large > img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.learning-title {
+  /* border: solid; */
+  text-align: start;
+  margin-left: 85px;
+  font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+  .learning-container {
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  .learningCard {
+    /* border: solid blue; */
+    width: 100%;
+  }
+  .learningCard-large {
+    border: 1px solid var(--customColor1);
+    width: 100%;
+    flex-direction: column;
+  }
+  .learning-title {
+  /* border: solid; */
+  text-align: center;
+  margin-left: 0px;
+}
+}

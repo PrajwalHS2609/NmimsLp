@@ -1,0 +1,120 @@
+.homeFaq-container {
+  /* border: solid red; */
+  background-color: white;
+  margin-top: 30px;
+  display: flex;
+}
+.homeWhyHead {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeFaq-container > h2 {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+.homeFaq-container > h2 > span {
+  color: var(--customColor);
+}
+.homeFaq-wrapper {
+  /* border: solid blue; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 60%;
+}
+.homeFaq-content {
+  /* border: solid green; */
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.homeFaq-content > h2 {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+
+.homeFaq-content > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.homeFaq-content:nth-child(2) {
+  background-color: var(--customColor1);
+  height: 100%;
+  padding: 50px;
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--customBg) !important;
+  color: black;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.homeFaq-accItem {
+  margin: 30px;
+  background-color: var(--customColor1);
+  color: white;
+}
+.homeFaq-accHeader {
+  font-weight: 500;
+  border-left: 5px solid var(--customColor1);
+}
+.homeFaq-item {
+  width: 100%;
+  /* border: solid red; */
+}
+@media screen and (max-width: 768px) {
+  .homeFaq-container > h2 {
+    font-size: 30px;
+  }
+  .homeFaq-container {
+    /* border: solid red; */
+    padding: 10px;
+    flex-direction: column;
+  }
+  .homeWhyHead {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .homeFaq-wrapper {
+    /* border: solid blue; */
+    flex-direction: column-reverse;
+    padding: 10px;
+    width: 100%;
+  }
+  .homeFaq-content {
+    /* border: solid green; */
+    width: 100%;
+    padding: 10px;
+  }
+  .homeFaq-content > img {
+    display: none;
+  }
+  .homeFaq-content:nth-child(2) {
+    background-color: #86a5a8;
+    height: 700px;
+    display: none;
+  }
+  .homeFaq-content:nth-child(2) {
+  background-color: var(--customColor1);
+  height: 100%;
+  padding: 10px;
+}
+.homeFaq-accItem {
+  margin: 10px;
+  margin-top: 20px;
+  background-color: var(--customColor1);
+  color: white;
+}
+}
