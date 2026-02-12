@@ -18,6 +18,8 @@ const HomeEligibility = () => {
             src={eligibility}
             alt="Eligibility"
             className="eligibility-img"
+            width={200}
+            height={200}
           />
         </div>
 

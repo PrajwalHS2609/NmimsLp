@@ -38,8 +38,8 @@
 }
 
 .eligibility-img {
-  width: 100%;
-  max-width: 150px;
+
+  object-fit: contain;
 }
 
 /* Right Timeline */
