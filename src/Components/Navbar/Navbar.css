@@ -59,6 +59,14 @@
 }
 .menu-content > ul > li {
   list-style: none;
+    color: grey;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+cursor: pointer;
+  &:hover {
+    color: var(--accentColor);
+  }
 }
 .menu-content > ul > li > a {
   color: grey;

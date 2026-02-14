@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import Link from "next/link";
 
 const Footer = () => {
   const footerData = [
@@ -70,8 +71,8 @@ const Footer = () => {
         CDOE and as an AEP, we have no role to play in it.
       </p>
       <p className="disclaimer">
-        Collegesathi 2025. All Rights Reserved | NMIMS University | Terms &
-        Conditions | Privacy Policy
+        Prizmaacademy 2025. All Rights Reserved |
+        <Link href="/"> NMIMS University</Link> |
       </p>
     </footer>
   );

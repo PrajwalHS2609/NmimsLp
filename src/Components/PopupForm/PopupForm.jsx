@@ -8,7 +8,7 @@ const PopupForm = () => {
   const handleExit = () => {
     document.querySelector(".popup-container").style.display = "none";
   };
-    const onSubmit = async (event) => {
+  const onSubmit = async (event) => {
     event.preventDefault();
     const form = event.target;
     const formData = new FormData(form);
@@ -43,7 +43,7 @@ const PopupForm = () => {
         icon: "error",
       });
     }
-  };  
+  };
   return (
     <div className="popup-container">
       <div className="popup-wrapper">
@@ -62,31 +62,30 @@ const PopupForm = () => {
           </div>
           <h2>Get in Touch</h2>
           <form className="popup-form" onSubmit={onSubmit}>
-            <input type="text" placeholder="Full Name" name="name"required />
-            <input type="tel" placeholder="Phone Number" name="phone"required />
-            <input type="email" placeholder="Email Address" name="email"required />
+            <input type="text" placeholder="Full Name" name="name" required />
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              name="phone"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email Address"
+              name="email"
+              required
+            />
 
             <select name="course" id="" required>
               <option value="">Select Course</option>
-              <option value="MBA (General Management)">
-                MBA (General Management)
-              </option>
-              <option value="MBA (Finance)">MBA (Finance)</option>
-              <option value="MBA (Marketing)">MBA (Marketing)</option>
-              <option value="MBA (HR Management)">MBA (HR Management)</option>
-              <option value="MBA (Information Technology)">
-                MBA (Information Technology)
-              </option>
-              <option value="MBA (Supply Chain Management)">
-                MBA (Supply Chain Management)
-              </option>
-              <option value="MBA (Data Analytics)">MBA (Data Analytics)</option>
-              <option value="MBA (Business Analytics)">
-                MBA (Business Analytics)
-              </option>
+              <option value="MBA">MBA</option>
             </select>
 
-            <textarea name="message" placeholder="Your Message" rows="4"></textarea>
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="4"
+            ></textarea>
 
             <button type="submit">Submit</button>
           </form>

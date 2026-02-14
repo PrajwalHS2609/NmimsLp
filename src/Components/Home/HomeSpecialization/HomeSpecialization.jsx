@@ -1,25 +1,43 @@
+"use client"
 import React from "react";
 import "./HomeSpecialization.css";
+import marketing from "@/Images/ServiceImgs/marketing-management.png";
+import business from "@/Images/ServiceImgs/business-management.png";
+import financial from "@/Images/ServiceImgs/financial-management.png";
+import hr from "@/Images/ServiceImgs/hr-management.png";
+import operation from "@/Images/ServiceImgs/operations-and-data-science-management.png";
+import Image from "next/image";
+
 const HomeSpecialization = () => {
+    const handlePop = () => {
+    document.querySelector(".popup-container").style.display = "flex";
+  };
   const data = [
     {
       title: "Marketing Management",
-      image:
-        "https://www.collegesathi.com/nmimsonlinemba/assets/marketing-management-CVGuvy-G.avif",
+      image: marketing,
       tag: "POPULAR",
       tagClass: "orange",
     },
     {
       title: "Business Management",
-      image:
-        "https://www.collegesathi.com/nmimsonlinemba/assets/marketing-management-CVGuvy-G.avif",
+      image: business,
     },
     {
       title: "Financial Management",
-      image:
-        "https://www.collegesathi.com/nmimsonlinemba/assets/marketing-management-CVGuvy-G.avif",
+      image: financial,
       tag: "TRENDING",
       tagClass: "green",
+    },
+    {
+      title: "Human Resource Management",
+      image: hr,
+      tag: "TOP RATED",
+      tagClass: "green",
+    },
+    {
+      title: "Operations and Data Science Management",
+      image: operation,
     },
   ];
   return (
@@ -34,7 +52,7 @@ const HomeSpecialization = () => {
               {item.tag && (
                 <span className={`spec-tag ${item.tagClass}`}>{item.tag}</span>
               )}
-              <img src={item.image} alt={item.title} />
+              <Image src={item.image} alt={item.title} />
             </div>
 
             <div className="spec-content">
@@ -42,7 +60,7 @@ const HomeSpecialization = () => {
             </div>
 
             <div className="spec-btnContainer">
-              <button>Enquire Now</button>
+              <button onClick={handlePop}>Enquire Now</button>
             </div>
           </div>
         ))}
