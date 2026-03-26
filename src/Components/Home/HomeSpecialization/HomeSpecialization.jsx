@@ -6,6 +6,9 @@ import business from "@/Images/ServiceImgs/business-management.png";
 import financial from "@/Images/ServiceImgs/financial-management.png";
 import hr from "@/Images/ServiceImgs/hr-management.png";
 import operation from "@/Images/ServiceImgs/operations-and-data-science-management.png";
+import infoTec from "@/Images/ServiceImgs/Information Technology Management.png";
+import business_analytic from "@/Images/ServiceImgs/Business Analytics.png";
+
 import Image from "next/image";
 
 const HomeSpecialization = () => {
@@ -38,6 +41,16 @@ const HomeSpecialization = () => {
     {
       title: "Operations and Data Science Management",
       image: operation,
+    },
+     {
+      title: "Information Technology Management",
+      image: infoTec,
+      tag: "TOP RATED",
+      tagClass: "green",
+    },
+    {
+      title: "Business Analytics",
+      image: business_analytic,
     },
   ];
   return (
