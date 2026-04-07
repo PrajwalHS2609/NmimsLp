@@ -71,7 +71,7 @@ const Footer = () => {
         CDOE and as an AEP, we have no role to play in it.
       </p>
       <p className="disclaimer">
-        Prizmaacademy 2025. All Rights Reserved |
+        <a href="tel:6362946008">+91 6362946008</a>| © Copyright 2026 All Rights Reserved |
         <Link href="/"> NMIMS University</Link> |
       </p>
     </footer>

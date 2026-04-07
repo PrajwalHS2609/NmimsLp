@@ -78,7 +78,19 @@ const PopupForm = () => {
 
             <select name="course" id="" required>
               <option value="">Select Course</option>
-              <option value="MBA">MBA</option>
+              <option value="Marketing Management">Marketing Management</option>
+              <option value="Business Management">Business Management</option>
+              <option value="Financial Management">Financial Management</option>
+              <option value="Human Resource Management">
+                Human Resource Management
+              </option>
+              <option value="Operations and Data Science Management">
+                Operations and Data Science Management
+              </option>
+              <option value="Information Technology Management">
+                Information Technology Management
+              </option>
+              <option value="Business Analytics">Business Analytics</option>
             </select>
 
             <textarea

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import "./HomeHeroSection.css";
 import Image from "next/image";
@@ -50,33 +50,49 @@ const HomeHeroSection = () => {
           <p className="enquiry-sub">Get 1-on-1 Career Counselling</p>
 
           <form className="enquiry-form" onSubmit={handleSubmit}>
-            <input type="text" placeholder="Your name" />
-            <input type="email" placeholder="Your email address" />
+            <input type="text" placeholder="Your name" name="Name" />
+            <input type="email" placeholder="Your email address" name="Email" />
 
             <div className="mobile-field">
               <span>+91</span>
-              <input type="text" placeholder="Mobile number" />
+              <input type="text" placeholder="Mobile number" name="Phone"/>
             </div>
 
-            <select>
-              <option>Select Specialization</option>
-              <option>MBA</option>
+           <select name="course" id="" required>
+              <option value="">Select Course</option>
+              <option value="Marketing Management">Marketing Management</option>
+              <option value="Business Management">Business Management</option>
+              <option value="Financial Management">Financial Management</option>
+              <option value="Human Resource Management">
+                Human Resource Management
+              </option>
+              <option value="Operations and Data Science Management">
+                Operations and Data Science Management
+              </option>
+              <option value="Information Technology Management">
+                Information Technology Management
+              </option>
+              <option value="Business Analytics">Business Analytics</option>
             </select>
+
+           <div className="consent-container">
+             <div className="consent-box">
+              <input type="checkbox" defaultChecked />
+              <p>
+                I authorize NMIMS University Online and its associates to
+                contact me with updates and notifications via email, SMS,
+                WhatsApp, and voice calls. This consent will override any
+                registration under DNC/NDNC.
+              </p>
+            </div>
+
+            <div className="submit-wrap">
+              <button className="submit-btn" type="submit">
+                Submit
+              </button>
+            </div>
+           </div>
           </form>
-
-          <div className="consent-box">
-            <input type="checkbox" defaultChecked />
-            <p>
-              I authorize NMIMS University Online and its associates to contact
-              me with updates and notifications via email, SMS, WhatsApp, and
-              voice calls. This consent will override any registration under
-              DNC/NDNC.
-            </p>
-          </div>
-
-          <div className="submit-wrap">
-            <button className="submit-btn" type="submit">Submit</button>
-          </div>
         </div>
       </div>
       <div className="homeHero-content">
