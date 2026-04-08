@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   position: sticky;
-  top: 0;
+  top:65px;
   z-index: 9;
   background-color: white;
 }
@@ -187,6 +187,9 @@ cursor: pointer;
   width: 150px;
   height: 100%;
   object-fit: cover;
+}
+.navbar-container {
+top: 65px;
 }
   .menu-content {
     display: none;
