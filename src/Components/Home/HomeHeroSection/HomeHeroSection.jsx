@@ -26,6 +26,14 @@ const HomeHeroSection = () => {
     }).then((res) => res.json());
 
     if (res.success) {
+  if (
+    typeof window !== "undefined" &&
+    window.gtag &&
+    window.gtag_report_conversion
+  ) {
+    window.gtag_report_conversion();
+  }
+
       Swal.fire({
         title: "Success!",
         text: "Mail Sent successfully",
@@ -55,10 +63,10 @@ const HomeHeroSection = () => {
 
             <div className="mobile-field">
               <span>+91</span>
-              <input type="text" placeholder="Mobile number" name="Phone"/>
+              <input type="text" placeholder="Mobile number" name="Phone" />
             </div>
 
-           <select name="course" id="" required>
+            <select name="course" id="" required>
               <option value="">Select Course</option>
               <option value="Marketing Management">Marketing Management</option>
               <option value="Business Management">Business Management</option>
@@ -75,23 +83,23 @@ const HomeHeroSection = () => {
               <option value="Business Analytics">Business Analytics</option>
             </select>
 
-           <div className="consent-container">
-             <div className="consent-box">
-              <input type="checkbox" defaultChecked />
-              <p>
-                I authorize NMIMS University Online and its associates to
-                contact me with updates and notifications via email, SMS,
-                WhatsApp, and voice calls. This consent will override any
-                registration under DNC/NDNC.
-              </p>
-            </div>
+            <div className="consent-container">
+              <div className="consent-box">
+                <input type="checkbox" defaultChecked />
+                <p>
+                  I authorize NMIMS University Online and its associates to
+                  contact me with updates and notifications via email, SMS,
+                  WhatsApp, and voice calls. This consent will override any
+                  registration under DNC/NDNC.
+                </p>
+              </div>
 
-            <div className="submit-wrap">
-              <button className="submit-btn" type="submit">
-                Submit
-              </button>
+              <div className="submit-wrap">
+                <button className="submit-btn" type="submit">
+                  Submit
+                </button>
+              </div>
             </div>
-           </div>
           </form>
         </div>
       </div>

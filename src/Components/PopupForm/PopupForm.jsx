@@ -29,6 +29,15 @@ const PopupForm = () => {
     }).then((res) => res.json());
 
     if (res.success) {
+      // 🔥 Fire conversion
+      if (
+        typeof window !== "undefined" &&
+        window.gtag &&
+        window.gtag_report_conversion
+      ) {
+        window.gtag_report_conversion();
+      }
+
       Swal.fire({
         title: "Success!",
         text: "Mail Sent successfully",
