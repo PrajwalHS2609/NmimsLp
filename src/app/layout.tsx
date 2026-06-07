@@ -32,6 +32,7 @@ export default function RootLayout({
             gtag('config', 'AW-17917921555');
           `}
         </Script>
+        
          {/* Google Ads Global Tag */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-17917921555"

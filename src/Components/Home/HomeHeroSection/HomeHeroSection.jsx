@@ -58,12 +58,12 @@ const HomeHeroSection = () => {
           <p className="enquiry-sub">Get 1-on-1 Career Counselling</p>
 
           <form className="enquiry-form" onSubmit={handleSubmit}>
-            <input type="text" placeholder="Your name" name="Name" />
-            <input type="email" placeholder="Your email address" name="Email" />
+            <input type="text" placeholder="Your name" name="Name" required/>
+            <input type="email" placeholder="Your email address" name="Email" required/>
 
             <div className="mobile-field">
               <span>+91</span>
-              <input type="text" placeholder="Mobile number" name="Phone" />
+              <input type="text" placeholder="Mobile number" name="Phone" required/>
             </div>
 
             <select name="course" id="" required>

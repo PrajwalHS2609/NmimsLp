@@ -106,6 +106,7 @@ const PopupForm = () => {
               name="message"
               placeholder="Your Message"
               rows="4"
+              required
             ></textarea>
 
             <button type="submit">Submit</button>
